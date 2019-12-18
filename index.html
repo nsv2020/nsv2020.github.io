@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="nsv.css">
+
+    <title>NSV 2020 - 13th International Workshop on Numerical Software Verification 2020</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">NSV 19</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+  <!--        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Submission Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#submission">Scope</a>
+              <a class="dropdown-item" href="#format">Instructions for Authors</a>
+              <a class="dropdown-item" href="#cfp">Call for Papers</a>
+              <a class="dropdown-item" href="#dates">Important Dates</a>
+            </div>
+          </li> -->
+    <!--      <li class="nav-item">
+            <a class="nav-link" href="#invited">Invited Speakers</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organization</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#chairs">Organizers</a>
+          <!--    <a class="dropdown-item" href="#pc">Program Committee</a> -->
+              <a class="dropdown-item" href="#steering">Steering Committee</a>
+            </div>
+          </li>
+   <!--       <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li> -->
+   <!--       <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#prev">Previous Editions</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+    <div class="container" id="home">
+      <h1 class="display-3">NSV 20</h1>
+      <h3>
+      13th International Workshop on Numerical Software Verification 2020<br>
+      collocated with CAV, 19-20 July 2020<br>
+      Los Angeles, CA, USA
+      </h3>
+      <!--
+      <p><a class="btn btn-primary btn-lg" href="#schedule" role="button">Go to schedule&raquo;</a></p>-->
+      <!-- background picture from https://www.sunn-starr.com/_images/Downtown-Los-Angeles_(300-dpi).jpg Public Domain -->
+    </div>
+    </div>
+    
+    <div class="container" id="submission">
+      <h2 class="border-bottom">Scope</h2>
+      <div class="row">
+        <div class="col">
+        <p>Numerical computations are ubiquitous in digital systems: supervision, prediction, simulation and signal processing rely heavily on numerical calculus to achieve desired goals. Design and verification of numerical algorithms has a unique set of challenges, which set it apart from rest of software verification. To achieve the verification and validation of global properties, numerical techniques need to precisely represent local behaviors of each component. The implementation of numerical techniques on modern hardware adds another layer of approximation because of the use of finite representations of infinite precision numbers that usually lack basic arithmetic properties such as commutativity and associativity. Finally, the development and analysis of cyber-physical systems (CPS) which involve the interacting continuous and discrete components pose a further challenge. It is hence imperative to develop logical and mathematical techniques for the reasoning about programmability and reliability. The NSV workshop is dedicated to the development of such techniques.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <h3>Topics</h3>
+        <p>The scope of the workshop includes, but is not restricted to, the following topics:</p>
+        <ul>
+        <li>Quantitative and qualitative analysis of hybrid systems</li>
+        <li>Models and abstraction techniques</li>
+        <li>Optimal control of dynamical systems</li>
+        <li>Parameter identification for hybrid systems</li>
+        <li>Numerical optimization methods</li>
+        <li>Hybrid systems verification</li>
+        <li>Applications of hybrid systems to systems biology</li>
+        <li>Propagation of uncertainties, deterministic and probabilistic models</li>
+        <li>Specifications of correctness for numerical programs</li>
+        <li>Formal specification and verification of numerical programs</li>
+        <li>Quality of finite precision implementations</li>
+        <li>Numerical properties of control software</li>
+        <li>Validation for space, avionics, automotive and real-time applications</li>
+        <li>Validation for scientific computing programs</li>
+        </ul>
+        </div>
+<!--      </div>
+        <div class="row">
+        <div class="col">
+        <h3>Proceedings</h3>
+        <p>The proceedings are available at <a href="https://www.springer.com/978-3-030-28422-0">https://www.springer.com/978-3-030-28422-0</a>.</p>
+        </div>
+      </div>-->
+    </div>
+<!--    
+    <div class="container" id="invited">
+      <h2 class="border-bottom">Invited Speakers</h2>
+      <div class="row">
+        <div class="col">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#calinmodal">Calin Belta, Boston University, USA</a>
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#karlmodal">Karl Henrik Johansson, KTH Royal Institute of Technology, Sweden</a>
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#jensmodal">Jens Oehlerking, Robert Bosch GmbH, Germany</a>
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#martinmodal">Martin Rinard, MIT, USA</a>
+        </div>
+        <div class="modal fade" id="calinmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Calin Belta, Boston University, USA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img style="padding: 0 15px; float: left;" src="/img/calin.png" height="240px" />
+Calin Belta is a Professor in the Department of Mechanical Engineering at Boston University, where he holds the Tegan Family Distinguished Faculty Fellowship. He is the Director of the BU Robotics Lab and of the Center for Autonomous and Robotic Systems (CARS), and is also affiliated with the Department of Electrical and Computer Engineering and the Division of Systems Engineering at Boston University. His research focuses on dynamics and control theory, with particular emphasis on hybrid and cyber-physical systems, formal synthesis and verification, and robotics.  He received the Air Force Office of Scientific Research Young Investigator Award and the National Science Foundation CAREER Award. He is a distinguished lecturer of the IEEE Control System Society and an IEEE Fellow.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="karlmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Karl Henrik Johansson, KTH Royal Institute of Technology, Sweden</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img style="padding: 0 15px; float: left;" src="/img/johansson.jpg" height="240px" />
+                  
+                Karl Henrik Johansson is Director of the Stockholm Strategic Research Area ICT The Next Generation and Professor at the School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology. He received MSc and PhD degrees from Lund University. He has held visiting positions at UC Berkeley, Caltech, NTU, HKUST Institute of Advanced Studies, and NTNU. His research interests are in networked control systems, cyber-physical systems, and applications in transportation, energy, and automation. He is a member of the IEEE Control Systems Society Board of Governors, the IFAC Executive Board, and the European Control Association Council. He has received several best paper awards and other distinctionsfrom IEEE and ACM. He has been awarded Distinguished Professor with the Swedish Research Council and Wallenberg Scholar. He has received the Future Research Leader Award from the Swedish Foundation for Strategic Research and the triennial Young Author Prize from IFAC. He is Fellow of the IEEE and the Royal Swedish Academy of Engineering Sciences, and he is IEEE Distinguished Lecturer.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="jensmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Jens Oehlerking, Robert Bosch GmbH, Germany</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img style="padding: 0 15px; float: left;" src="/img/oehlerking.jpg" height="240px" />
+                  <p>Jens Oehlerking received his PhD in computer science at the University of Oldenburg in 2011 in the field of hybrid systems verification and has been a research scientist at the Robert Bosch GmbH in Stuttgart since 2012. He worked on formal methods in the context of applications from the automotive industry such as automated driving, vehicle stability control and engine control, with a focus on exploiting both physical and software models for verification and control. He also worked on specification logics and black box testing of automotive software, and on safe planning for autonomous systems based on reachability analysis. His current research is centered on the combination of formal methods, learning based approaches and model based testing  for automated driving applications.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="martinmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Martin Rinard, MIT, USA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+Martin Rinard is a Professor in the Department of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology and a member of the Computer Science and Artificial Intelligence Laboratory. His research focuses on software systems and related topics, including computer security, program analysis and compilation, machine learning and programming, approximate computing, and software robustness and reliability. Martin Rinard is an ACM Fellow and has won multiple best and distinguished paper awards at top publication venues.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="container" id="invited_tutorial">
+      <h2 class="border-bottom">Invited Tutorial Speakers</h2>
+      <div class="row">
+        <div class="col">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#jhamodal">Susmit Jha, SRI International, USA</a>
+          <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#trivedimodal">Ashutosh Trivedi, University of Colorado Boulder, USA</a>
+        </div>
+        <div class="modal fade" id="jhamodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Susmit Jha, SRI International, USA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  Susmit Jha is a Senior Scientist at SRI International. His research focuses on combining formal methods and machine learning to build trusted artificial intelligence and correct-by-construction autonomous systems. His research background is in Formal Methods, Artificial Intelligence and Control Theory.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="trivedimodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Ashutosh Trivedi, University of Colorado Boulder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                 Ashutosh Trivedi is an assistant professor in the Department of Computer Science at the University of Colorado Boulder. He works in the Programming Languages and Verification Group and the Theory Group at the University of Colorado Boulder. His research focuses on applying rigorous mathematical reasoning techniques to design and analyze safe and secure cyber-physical systems (CPS) with guaranteed performance. He investigates foundational issues (decidability and complexity) related to modeling and analysis of CPS as well as practically focused tools that can be used by practitioners to analyze large systems at scale. 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="jensmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Jens Oehlerking, Robert Bosch GmbH, Germany</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img style="padding: 0 15px; float: left;" src="/img/oehlerking.jpg" height="240px" />
+Jens Oehlerking received his PhD in computer science at the University of Oldenburg in 2011 in the field of hybrid systems verification and has been a research scientist at the Robert Bosch GmbH in Stuttgart since 2012. He worked on formal methods in the context of applications from the automotive industry such as automated driving, vehicle stability control and engine control, with a focus on exploiting both physical and software models for verification and control. He also worked on specification logics and black box testing of automotive software, and on safe planning for autonomous systems based on reachability analysis. His current research is centered on the combination of formal methods, learning based approaches and model based testing  for automated driving applications.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="martinmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Martin Rinard, MIT, USA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+Martin Rinard is a Professor in the Department of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology and a member of the Computer Science and Artificial Intelligence Laboratory. His research focuses on software systems and related topics, including computer security, program analysis and compilation, machine learning and programming, approximate computing, and software robustness and reliability. Martin Rinard is an ACM Fellow and has won multiple best and distinguished paper awards at top publication venues.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br />
+    </div>
+
+
+
+
+    <div class="container" id="schedule">
+      <h2 class="border-bottom">Schedule</h2>
+      <h4> 13.07.2019</h4>
+      <div class="row">
+        <div class="col">
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t0900"> 
+              <div class="d-flex flex-row">
+                <div class="p-2"> 9:00 - 10:00:</div>
+                <div class="p-2"><i>Correctness and Optimality for Control Systems</i><br /> Calin Belta</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited talk</span><br/><span class="badge badge-secondary badge-pill">Slides available</span></div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex flex-row">
+                <div class="p-2">10:00 - 10:30:</div>
+                <div class="p-2">Break</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1030">
+              <div class="d-flex flex-row">
+                <div class="p-2">10:30 - 11:30:</div>
+                <div class="p-2"><i>Trust, Resilience and Interpretability of AI Models</i><br />Susmit Jha</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited tutorial</span><br/><span class="badge badge-secondary badge-pill">Slides available</span></div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1130">
+              <div class="d-flex flex-row">
+                <div class="p-2">11:30 - 12:00:</div>
+                <div class="p-2"><i>An Evaluation of Monte-Carlo Tree Search for Property Falsification on Hybrid Flight Control Laws</i><br />Rémi Delmas, Thomas Loquen, Josep Boada-Bauxell and Mathieu Carton</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1200">
+              <div class="d-flex flex-row">
+                <div class="p-2">12:00 - 12:30:</div>
+                <div class="p-2"><i>Rigorous Continuous Evolution of Uncertain Systems</i><br />Luca Geretti, Sanja Zivanovic, Pieter Collins, Davide Bresolin and Tiziano Villa</div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex flex-row">
+                <div class="p-2">12:30 - 14:30:</div>
+                <div class="p-2">Break</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1430"> 
+              <div class="d-flex flex-row">
+                <div class="p-2">14:30 - 15:30:</div>
+                <div class="p-2"><i>Modeling, Control, and Verification of an Automated Transport System </i><br />Karl Henrik Johansson</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited talk</span><br/><span class="badge badge-secondary badge-pill">Slides available</span></div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1530">  
+              <div class="d-flex flex-row">
+                <div class="p-2">15:30 - 16:00:</div>
+                <div class="p-2"><i>Polytopic Trees for Verification of Learning-Based Controllers</i><br />Sadra Sadraddini, Shen Shen and Osbert Bastani</div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex flex-row">
+                <div class="p-2">16:30 - 16:30:</div>
+                <div class="p-2">Break</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1630"> 
+              <div class="d-flex flex-row">
+                <div class="p-2">16:30 - 17:00:</div>
+                <div class="p-2"><i>Evaluating Branching Heuristics in Interval Constraint Propagation for Satisfiability</i><br />Calvin Huang, Soonho Kong, Sicun Gao and Damien Zufferey</div>
+              </div>
+            </a>
+        </div>
+
+        <div class="modal fade" id="t0900" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>09:00 - 10:00: Calin Belta: <i>Correctness and Optimality for Control Systems</i> (invited Talk)</h6>
+                    <p>In control theory, complicated dynamics such as systems of (nonlinear) differential equations are mostly controlled to achieve stability. This fundamental property is often linked with optimality, which requires minimization of a certain cost along the trajectories of a stable system. In formal synthesis, simple systems such as finite state transition graphs modeling computer programs or digital circuits are con- trolled from specifications such as safety, liveness, or richer requirements expressed as formulas of temporal logics. With the development and integration of cyber physical and safety critical systems, there is an increasing need for computational tools for controlling complex systems from rich, temporal logic specifications. In this talk, I will introduce some recent results on the connection between optimal control and formal synthesis. Specifically, I will focus on the following problem: given a cost and a correctness temporal logic specification for a dynamical system, generate an optimal control strategy that satisfies the specification. I will first talk about automata-based methods, in which the dynamics of the system are mapped to a finite abstraction that is then controlled using an automaton corresponding to the specification. I will then focus on optimization-based methods, which rely on mapping the specification and the dynamics to constraints of an optimization problem. I will illustrate the usefulness of these approaches with examples from robotics and traffic control.</p>
+                    <p><a href="slides/slides_calin_belta.pdf">Download slides</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="t1030" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>10:30 - 11:30 Susmit Jha: <i>Trust, Resilience and Interpretability of AI Models</i> (invited tutorial)</h6>
+                    <p>In this tutorial, we present our recent work on building trusted, resilient and interpretable AI models by combining symbolic methods developed for automated reasoning with connectionist learning methods that use deep neural networks. The increasing adoption of artificial intelligence and machine learning in systems, including safety-critical systems, has created a pressing need for developing scalable techniques that can be used to establish trust over their safe behavior, resilience to adversarial attacks, and interpretability to enable human audits. This tutorial is comprised of three components: review of techniques for verification of neural networks, methods for using geometric invariants to defend against adversarial attacks, and techniques for extracting logical symbolic rules by reverse engineering machine learning models. These techniques form the core of TRINITY: Trusted, Resilient and Interpretable AI framework being developed at SRI. In this tutorial, we identify the key challenges in building the TRINITY framework, and report recent results on each of these three fronts.</p>
+                    <p><a href="slides/slides_susmit_jha.pdf">Download slides</a></p>
+                    
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="t1130" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>11:30 - 12:00 Rémi Delmas, Thomas Loquen, Josep Boada-Bauxell and Mathieu Carton <i>An Evaluation of Monte-Carlo Tree Search for Property Falsification on Hybrid Flight Control Laws</i></h6>
+                    The formal verification and validation of real-world, industrial critical hybrid flight controllers remains a very challenging task.  An increasingly popular and quite successful alternative to formal verification is the use of optimization and reinforcement learning techniques to maximize some real-valued reward function encoding the robustness margin to the falsification of a property. In this paper we present an evaluation of a simple Monte-Carlo Tree Search property falsification algorithm, applied to select properties of a longitudinal hybrid flight control law: a threshold overshoot property, two frequential properties, and a discrete event-based property.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="t1200" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>12:00 - 12:30 Luca Geretti, Sanja Zivanovic, Pieter Collins, Davide Bresolin and Tiziano Villa <i>Rigorous Continuous Evolution of Uncertain Systems</i></h6>
+                    Uncertainty is unavoidable in modeling dynamical systems and it may be represented mathematically by differential inclusions. In the past, we proposed an algorithm to compute validated solutions of differential inclusions; here we provide several theoretical improvements to the algorithm, including its extension to piecewise constant and sinusoidal approximations of uncertain inputs, updates on the affine approximation bounds and a generalized formula for the analytical error. In addition, we implemented the methodology in Ariadne, a library for the verification of continuous and hybrid systems. Then we evaluated ten systems with varying degrees of nonlinearity, number of variables and uncertain inputs.  The results are hereby compared with two state-of-the-art approaches to time-varying uncertainties in nonlinear systems.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="t1430" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>14:30 - 15:30 Karl Henrik Johansson <i>Modeling, Control, and Verification of an Automated Transport System</i> (invited talk)</h6>
+                    <p>Freight transportation is of utmost importance for our society. It accounts for a significant amount of all energy consumption and greenhouse gas emissions. In this talk, we will discuss the potential future of road goods transportation and how it can be made more robust and efficient, from the automation of individual long-haulage trucks to the optimisation of fleet management and logistics. Such an integrated transportation system benefits from having trucks travelling together in vehicle platoons. From the reduced air drag, platooning trucks travelling close together can save more than 10% of their fuel consumption. In addition, by automating the driving, it is possible to change driver regulations and thereby increase the efficiency even more. Control and optimization problems on various level of this transportation system will be presented.  It will be argued that a system architecture utilising vehicle-to-vehicle and vehicle-to-infrastructure communication enable robust and safe control of individual trucks as well as optimised vehicle fleet collaborations and new market opportunities. Extensive experiments done on European highways will illustrate system performance and safety requirements. The presentation will mainly be based on joint work over the last ten years with collaborators at KTH and with the truck manufacturers Scania and Volvo.
+                    <p><a href="slides/transport_johansson_handout.pdf">Download slides</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                    
+        <div class="modal fade" id="t1530" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>15:30 - 16:00 Sadra Sadraddini, Shen Shen and Osbert Bastani <i>Polytopic Trees for Verification of Learning-Based Controllers</i></h6>
+                    Reinforcement learning is increasingly used to synthesize controllers for a broad range of applications. However, formal guarantees on the behavior of learning-based controllers are elusive due to the black- box nature of machine learning models such as neural networks. In this paper, we propose an algorithm for verifying learning-based controllers— in particular, deep neural networks with ReLU activations, and decision trees with linear decisions and leaf values—for deterministic, piecewise affine (PWA) dynamical systems. In this setting, our algorithm computes the safe (resp., unsafe) region of the state space—i.e., the region of the state space on which the learned controller is guaranteed to satisfy (resp., fail to satisfy) a given reach-avoid specification. Knowing the safe and unsafe regions is substantially more informative than the boolean characterization of safety (i.e., safe or unsafe) provided by standard verification algorithms—for example, this knowledge can be used to compose controllers that are safe on different portions of the state space. At a high level, our algorithm uses convex programming to iteratively compute new regions (in the form of polytopes) that are guaranteed to be entirely safe or entirely unsafe. Then, it connects these polytopic regions together in a tree-like fashion. We conclude with an illustrative example on controlling a hybrid model of a contact-based robotics problem.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="t1630" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">13.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>16:30 - 17:00 Calvin Huang, Soonho Kong, Sicun Gao and Damien Zufferey <i>Evaluating Branching Heuristics in Interval Constraint Propagation for Satisfiability</i></h6>
+                    Interval Constraint Propagation (ICP) is a powerful method for solving general nonlinear constraints over real numbers. ICP uses interval arithmetic to prune the space of potential solutions and, when the constraint propagation fails, divides the space into smaller regions and continues recursively. The original goal is to find paving boxes of all solutions to a problem. Already when the whole domain needs to be considered, branching methods do matter much. However, recent applications of ICP in decision procedures over the reals need only a single solution.  Consequently, variable ordering in branching operations becomes even more important.  In this work, we compare three different branching heuristics for ICP. The first method, most commonly used, splits the problem in the dimension with the largest lower and upper bound. The two other types of branching methods try to exploit an integration of analytical/numerical properties of real functions and search-based methods. The second method, called smearing, uses gradient information of constraints to choose variables that have the highest local impact on pruning. The third method, lookahead branching, designs a measure function to compare the effect of all variables on pruning operations in the next several steps.  We evaluate the performance of our methods on over 11,000 benchmarks from various sources. While the different branching methods exhibit significant differences on larger instance, none is consistently better. This shows the need for further research on branching heuristics when ICP is used to find an unique solution rather than all solutions.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <br />
+
+      <h4> 14.07.2019</h4>
+      <div class="row">
+        <div class="col">
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t0900_14">
+              <div class="d-flex flex-row">
+                <div class="p-2"> 9:00 - 10:00:</div>
+                <div class="p-2"><i>Identifying and Exploiting Partially Redundant Computations</i><br/>Martin Rinard</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited talk</span></div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex flex-row">
+                <div class="p-2">10:00 - 10:30:</div>
+                <div class="p-2">Break</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1030_14">
+              <div class="d-flex flex-row">
+                <div class="p-2">10:30 - 11:30:</div>
+                <div class="p-2"><i>Reinforcement Learning and Formal Requirements</i><br/>Fabio Somenzi and Ashutosh Trivedi</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited tutorial</span></div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1130_14"> 
+              <div class="d-flex flex-row">
+                <div class="p-2">11:30 - 12:00:</div>
+                <div class="p-2"><i>Mutant Accuracy Testing for Assessing the Implementation of Numerical Algorithms</i><br />Ruining Wu and Ian Mitchell</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1200_14">
+              <div class="d-flex flex-row">
+                <div class="p-2">12:00 - 12:30:</div>
+                <div class="p-2"><i>Stochastic Local Search for Solving Floating-Point Constraints</i><br />Shaobo He, Marek Baranowski and Zvonimir Rakamaric</div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex flex-row">
+                <div class="p-2">12:30 - 14:30:</div>
+                <div class="p-2">Break</div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1430_14">
+              <div class="d-flex flex-row">
+                <div class="p-2">14:30 - 15:30:</div>
+                <div class="p-2"><i>Formal Methods for Highly Automated Driving Applications</i><br />Jens Oehlerking</div>
+                <div class="ml-auto p-2"><span class="badge badge-primary badge-pill">Invited talk</span><br/><span class="badge badge-secondary badge-pill">Slides available</span></div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#t1530_14"> 
+              <div class="d-flex flex-row">
+                <div class="p-2">15:30 - 16:00:</div>
+                <div class="p-2"><i>Approximate Probabilistic Relations for Compositional Abstractions of Stochastic Systems</i><br />Abolfazl Lavaei, Sadegh Soudjani and Majid Zamani</div>
+              </div>
+            </a>
+        </div>
+
+        <div class="modal fade" id="t0900_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>09:00 - 10:00: Martin Rinard <i>Identifying and Exploiting Partially Redundant Computations</i> (invited talk)</h6>
+                    Partially redundant computations offer a range of opportunities for reducing the resources (time, energy, memory) required to obtain a meaningful result. In this talk I identify several patterns that contain exploitable redundancy and discuss mechanisms that exploit this redundancy. I will also discuss the return of analog computing as a compelling platform for low to medium precision computations.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="t1030_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>10:30 - 11:30: Fabio Somenzi and Ashutosh Trivedi: <i>Reinforcement Learning and Formal Requirements</i> (invited tutorial)</h6>
+                    Reinforcement learning is an approach to controller synthesis where agents rely on reward signals to choose actions in order to satisfy the requirements implicit in reward signals. Oftentimes non-experts have to come up with the requirements and their translation to rewards under significant time pressure, even though manual translation is time consuming and error prone. For safety-critical applications of reinforcement learning a rigorous design methodology is needed and, in particular, a principled approach to requirement specification and to the translation of objectives into the form required by reinforcement learning algorithms.  Formal logic provides a foundation for the rigorous and unambiguous requirement specification of learning objectives. However, reinforcement learning algorithms require requirements to be expressed as scalar reward signals. We discuss a recent technique, called limit-reachability, that bridges this gap by faithfully translating logic-based requirements into the scalar reward form needed in model-free reinforcement learning. This technique enables the synthesis of controllers that maximize the probability to satisfy given logical requirements using off-the-shelf, model-free reinforcement learning algorithms.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="t1130_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <h6>11:30 - 12:00: Ruining Wu and Ian Mitchell: <i>Mutant Accuracy Testing for Assessing the Implementation of Numerical Algorithms</i></h6>
+                    Despite their widespread use, implementations of numerical computing algorithms are generally tested manually with fuzzily defined thresholds determining success or failure. Modern software testing methods, such as automated regression testing, are difficult to apply because both test oracles and algorithm output are approximate. Based on the observation that high accuracy numerical algorithms appear to be fragile by design to errors in their parameters, we propose to compare the error of target implementations to mutated versions of themselves with the expectation that the mutants will suffer degraded accuracy. We test the idea on Matlab implementations of some basic numerical algorithms, and find that most mutants are worse while the few which are better show a distinctive pattern of mutation.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="t1200_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <h6>12:00 - 12:30: Shaobo He, Marek Baranowski and Zvonimir Rakamaric: <i>Stochastic Local Search for Solving Floating-Point Constraints</i></h6>
+                    We present OL1V3R, a solver for the SMT floating-point theory that is based on stochastic local search (SLS). We adapt for OL1V3R the key ingredients of related work on leveraging SLS to solve the SMT fixed-sized bit-vector theory, and confirm its effectiveness by comparing it with mature solvers. Finally, we discuss the limitations of OL1V3R and propose solutions to make it more powerful.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="t1430_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <h6>14:30 - 15:30: Jens Oehlerking: <i>Formal Methods for Highly Automated Driving Applications</i> (invited talk)</h6>
+                    <p>In highly automated driving (HAD), the complexity of the environment leads to challenges in perception, planning, and control that go beyond those encountered in classical cyber-physical systems. These include the need to certify systems including artificial neural networks for perception, the need to predict human behavior in complex situations and the need to give safety guarantees without a human driver as a fallback.  Coming from concepts that are heavily used in the design of HAD system, such as criticality metrics, this talk gives perspectives on the applicability of formal methods. Formal methods of interest include hybrid systems, reachability computations, control invariants and the formal analysis of neural networks. Drawing from this discussion, a case is made for new specification languages that are tailored to the domain of autonomous systems.</p>
+                  <p><a href="slides/slides_jens_oehlerking.pdf">Download slides</a></p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                    
+        <div class="modal fade" id="t1530_14" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">14.07.2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <h6>15:30 - 16:00: Abolfazl Lavaei, Sadegh Soudjani and Majid Zamani: <i>Approximate Probabilistic Relations for Compositional Abstractions of Stochastic Systems</i></h6>
+                    In this paper, we propose a compositional approach for constructing abstractions of general Markov decision processes (gMDPs) using approximate probabilistic relations. The abstraction framework is based on the notion of δ-lifted relations, using which one can quantify the distance in probability between the interconnected gMDPs and that of their abstractions. This new approximate relation unifies compositionality results in the literature by allowing abstract models to have either finite or infinite state spaces. To this end, we first propose our compositionality results using the new approximate probabilistic relation which is based on lifting. We then focus on a class of stochastic nonlinear dynamical systems and construct their abstractions using both model order reduction and space discretization in a unified framework. Finally, we demonstrate the effectiveness of the proposed results by considering a network of four nonlinear dynamical subsystems (together 12 dimensions) and constructing finite abstractions from their reduced-order versions (together 4 dimensions) in a unified compositional framework.
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <br />
+      </div>
+-->    
+
+    <div class="container" id="organization">
+      <h2 class="border-bottom">Organization</h2>
+      <div class="row" id="chairs">
+        <div class="col">
+        <h4>Program Committee Chairs</h4>
+        <ul>
+          <li>Parasara Sridhar Duggirala, University of North Carolina at Chapel Hill, USA</li>
+          <li>Peter Schrammel, University of Sussex, and Diffblue Ltd, UK</li>
+        </ul>
+        </div>
+      </div>
+<!--      <div class="row" id="pc">
+        <div class="col">
+        <h4>Program Committee</h4>
+            <ul>
+                <li>Matthias Althoff, Technical University of Munich, Germany</li>
+                <li>Olivier	Bouissou, Mathworks, France</li>
+                <li>Samuel Coogan, Georgia Institute of Technology, USA</li>
+                <li>Rémi Delmas, ONERA, France</li>
+                <li>Sicun Gao, University of California San Diego, USA</li>
+                <li>Alberto	Griggio, Fondazione Bruno Kessler, Italy</li>
+                <li>Ashutosh Gupta,	IIT Bombay, India</li>
+                <li>Ichiro Hasuo, National Institute of Informatics, Japan</li>
+                <li>Susmit Jha, SRI International, USA</li>
+                <li>James Kapinski, Toyota, USA </li>
+                <li>Soonho Kong, Toyota Research Institute, USA</li>
+                <li>Jun Liu, University of Waterloo, Canada</li>
+                <li>Manuel Mazo, Delft University of Technology, Netherlands</li> 
+                <li>Tatjana Petrov, University of Konstanz, Germany </li>
+                <li>Ruzica Piskac, Yale University, USA</li>
+                <li>Sylvie Putot, LIX, Ecole Polytechnique, France</li>
+                <li>Akshay Rajhans,	MathWorks, USA</li>
+                <li>Stefan Ratschan, Academy of Sciences of the Czech Republic, Czech Republic</li>
+                <li>Matthias Rungger, ABB Corporate Research, Germany</li>
+                <li>Sadra Sadraddini, MIT, USA</li>
+                <li>Krishna	Shankaranarayanan, IIT Bombay, India</li>
+                <li>Sadegh Soudjani, Newcastle University, UK</li>
+                <li>Laura Titolo, National Institute of Aerospace, USA</li>
+                <li>Ashutosh Trivedi, University of Colorado Boulder, USA</li>
+                <li>Jana Tumova, KTH Royal Institute of Technology, Sweden</li>
+                <li>Caterina Urban, INRIA, France</li>
+                <li>Xiang Yin, Shanghai Jiao Tong University, China</li>
+            </ul>
+        </div>
+      </div>-->
+      <div class="row" id="steering">
+        <div class="col">
+        <h4>Steering Committee</h4>
+        <ul>
+          <li>Sergiy Bogomolov, ANU, Australia</li>
+          <li>Radu Grosu, TU Vienna, Austria</li>
+          <li>Matthieu Martel, Université de Perpignan, France</li>
+          <li>Pavithra Prabhakar, Kansas State University, USA</li>
+          <li>Sriram Sankaranarayanan, UC Boulder, USA</li>
+        </ul>
+        </div>
+      </div>
+<!--      <div class="row">
+        <div class="col">
+        <dl>
+        <dt>Publicity Chair</dt><dd>Mohammad Al Khatib, Technical University of Munich, Germany</dd>
+        <dt>Webmaster</dt><dd>Marcus Pirron, MPI-SWS, Germany</dd>
+        </dl>
+        </div>
+      </div> -->
+    </div>
+    
+    <br />
+<!--
+    <div class="container" id="sponsors">
+      <div class="row">
+        <div class="col">
+        <h2 class="border-bottom">Sponsors</h2>
+        <p>We gratefully acknowledge the support from the following sponsor:</p>
+        <p>
+        <img alt="Denso Logo" src="Denso.png"  width="250" height="50"/>
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container" id="format">
+      <h2 class="border-bottom">Submission Information</h2>
+      <div class="row">
+        <div class="col">
+        <h4>Instructions for Authors</h4>
+        <p>We solicit regular and short papers. Paper submission must be
+        performed via the EasyChair system: <em><a
+        href="https://easychair.org/conferences/?conf=nsv19" alt="EasyChair NSV2019">https://easychair.org/conferences/?conf=nsv19</a></em>.</p>
+        <p>Regular papers must describe original work, be written and presented in English, and must not substantially overlap with papers that have been published or that are under submission. Submitted papers will be judged on the basis of significance, relevance, correctness, originality, and clarity. They should clearly identify what has been accomplished and why it is significant.</p>
+        <p>Regular paper submissions should not exceed 15 pages in <a href="https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines">LNCS style</a>, plus possibly bibliography and appendices. However, program committee members are not required to read the appendices, thus papers must be intelligible without them.</p>
+        <p>Short papers are also welcome: they should present tools, benchmarks, case-studies or be extended abstracts of ongoing research. Short papers should not exceed 6 pages, excluding extra material as above.</p>
+        <p>All accepted papers will be published as Lecture Notes in Computer Science (LNCS) with Springer Verlag. <a href="http://www.springer.com/lncs">http://www.springer.com/lncs</a></p>
+        </div>
+      </div>
+      <div class="row" id="cfp">
+        <div class="col">
+        <h4>Call for Papers</h4>
+        <p><a href="nsv19-cfp1.txt">Text version of the cfp.</a></p>
+        </div>
+      </div>
+      <div class="row" id="dates">
+        <div class="col">
+        <h4>Important Dates</h4>
+        <table class="table table-hover table-sm">
+          <tbody>
+            <tr>
+              <th scope="row">Submissions deadline:</th>
+              <td><s>April 24, 2019</s> <b>May 1, 2019</b></td>
+            </tr>
+            <tr>
+              <th scope="row">Notification:</th>
+              <td>May 22, 2019</td>
+            </tr>
+            <tr>
+              <th scope="row">Final version:</th>
+              <td>May 29, 2019</td>
+            </tr>
+            <tr>
+              <th scope="row">Workshop:</th>
+              <td>July 13-14, 2019</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+-->
+
+
+    <br />
+
+
+    <div class="container" id="prev">
+      <h2 class="border-bottom">Previous Editions</h2>
+      <div class="row" id="prev">
+        <div class="col">
+      <ul class="list-unstyled" >
+      <li><a href="https://nsv19.mpi-sws.org/">2019, July 13-14, New York, NY, USA, collocated with CAV 2019</a></li>
+      <li><a href="https://nsv-2018.github.io/nsv2018/">2018, July 18, Oxford, UK, collocated with FLoC 2018</a></li>
+      <li><a href="http://www.cs.ox.ac.uk/conferences/NSV17/">2017, July 22-23, Heidelberg, Germany, collocated with CAV 2017</a></li>
+      <li><a href="https://nsv2016.pages.ist.ac.at/">2016, July 17-18, Toronto, Ontario, Canada, collocated with CAV 2016</a></li>
+      <li><a href="http://nsv2015.informatik.uni-freiburg.de/">2015, April 13, Seattle, USA, collocated with CPSWeek 2015</a></li>
+      <li><a href="http://www.lix.polytechnique.fr/~bouissou/NSV14/">2014, July 17-18, Vienna, Austria, collocated with Vienna Summer of Logic 2014</a></li>
+      <li><a href="http://www.lix.polytechnique.fr/~ghorbal/NSV-2013/">2013, April 8, Philadelphia, Pennsylvania, collocated with CPSWeek 2013</a></li>
+      <li><a href="https://www.cs.rice.edu/~sc40/NSV/12/">2012, July 7-8, Berkeley, California, collocated with CAV 2012</a></li>
+      <li><a href="http://www.lix.polytechnique.fr/Labo/Sylvie.Putot/NSV-2011/">2011, July 14, Salt lake City, Utah, collocated with CAV 2011</a></li>
+      <li><a href="http://www.lix.polytechnique.fr/Labo/Sylvie.Putot/NSV3/">2010, July 15, Edinburgh, UK, collocated with FLoC 2010</a></li>
+      <li><a href="http://theory.stanford.edu/~srirams/nsv2/">2009, April 16, San Fransisco, California collocated with CPSWeek 2009</a></li>
+      <li><a href="http://theory.stanford.edu/~srirams/nsv/index.html">2008, July 8, Princeton, New Jersey, collocated with CAV 2008</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    <footer class="container">
+        <p>&copy; 2020 NSV 20 <!--<a
+            href="https://imprint.mpi-klsb.mpg.de/sws/nsv19.mpi-sws.org">Imprint</a> /--> <!--<a href="https://www.sussex.ac.uk/about/website/privacy-and-cookies/privacy">Data Protection</a> --> </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
