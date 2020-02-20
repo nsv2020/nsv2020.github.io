@@ -22,7 +22,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
-  <!--        <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Submission Information
             </a>
@@ -32,7 +32,7 @@
               <a class="dropdown-item" href="#cfp">Call for Papers</a>
               <a class="dropdown-item" href="#dates">Important Dates</a>
             </div>
-          </li> -->
+          </li>
     <!--      <li class="nav-item">
             <a class="nav-link" href="#invited">Invited Speakers</a>
           </li> -->
@@ -75,7 +75,14 @@
       <h2 class="border-bottom">Scope</h2>
       <div class="row">
         <div class="col">
-        <p>Numerical computations are ubiquitous in digital systems: supervision, prediction, simulation and signal processing rely heavily on numerical calculus to achieve desired goals. Design and verification of numerical algorithms has a unique set of challenges, which set it apart from rest of software verification. To achieve the verification and validation of global properties, numerical techniques need to precisely represent local behaviors of each component. The implementation of numerical techniques on modern hardware adds another layer of approximation because of the use of finite representations of infinite precision numbers that usually lack basic arithmetic properties such as commutativity and associativity. Finally, the development and analysis of cyber-physical systems (CPS) which involve the interacting continuous and discrete components pose a further challenge. It is hence imperative to develop logical and mathematical techniques for the reasoning about programmability and reliability. The NSV workshop is dedicated to the development of such techniques.</p>
+          <p>Numerical computations are ubiquitous in digital systems: supervision, prediction, simulation and signal processing rely heavily on numerical calculus to achieve desired goals. Design and verification of numerical algorithms has a unique set of challenges, which set it apart from rest of software verification.
+            <!--To achieve the verification and validation of global properties, numerical techniques need to precisely represent local behaviors of each component.-->
+            The implementation of numerical techniques on modern hardware adds another layer of approximation because of the use of finite representations of infinite precision numbers that usually lack basic arithmetic properties such as commutativity and associativity.
+            Finally, the development and analysis of cyber-physical systems (CPS) which involve the interacting continuous and discrete components pose a further challenge. It is hence imperative to develop logical and mathematical techniques for the reasoning about programmability and reliability.
+            The NSV workshop is dedicated to the development of such techniques.
+
+This year, the NSV workshop is hosting a <b>special session on numerical computations in machine learning</b>. This includes, but is not limited to, performance vs accuracy trade-offs, reliability, robustness, co-design of hardware and software for numerical computations in machine learning frameworks.
+          </p>
         </div>
       </div>
       <div class="row">
@@ -83,29 +90,34 @@
         <h3>Topics</h3>
         <p>The scope of the workshop includes, but is not restricted to, the following topics:</p>
         <ul>
-        <li>Quantitative and qualitative analysis of hybrid systems</li>
-        <li>Models and abstraction techniques</li>
-        <li>Optimal control of dynamical systems</li>
-        <li>Parameter identification for hybrid systems</li>
-        <li>Numerical optimization methods</li>
-        <li>Hybrid systems verification</li>
-        <li>Applications of hybrid systems to systems biology</li>
-        <li>Propagation of uncertainties, deterministic and probabilistic models</li>
-        <li>Specifications of correctness for numerical programs</li>
-        <li>Formal specification and verification of numerical programs</li>
-        <li>Quality of finite precision implementations</li>
-        <li>Numerical properties of control software</li>
-        <li>Validation for space, avionics, automotive and real-time applications</li>
-        <li>Validation for scientific computing programs</li>
+        <li>Quality of finite precision implementations
+          <li>Representations of real numbers such as dfloat, finite precision, logarithmic number systems, etc</li>
+        </li>
+        <li>Validation and verification of machine learning algorithms
+          <li>Performance-accuracy trade-offs in floating point representations in machine learning</li>
+          <li>Robustness, reliability, and hardware software co-design for numerical computations in machine learning</li>
+        </li>
+        <li>Validation and verification in scientific computing and simulations
+          <li>Specifications of correctness of numerical algorithms</li>
+          <li>Numerical optimization methods</li>
+        </li>
+        <li>Hybrid systems and control software verification
+          <li>Quantitative and qualitative analysis of hybrid systems</li>
+          <!--<li>Models and abstraction techniques</li>-->
+          <!--<li>Propagation of uncertainties, deterministic and probabilistic models</li>-->
+          <li>Optimal control and synthesis of dynamical systems</li>
+          <li>Applications in space, avionics, automotive, systems biology, etc</li>
+        </li>
         </ul>
         </div>
-<!--      </div>
+      </div>
         <div class="row">
         <div class="col">
         <h3>Proceedings</h3>
-        <p>The proceedings are available at <a href="https://www.springer.com/978-3-030-28422-0">https://www.springer.com/978-3-030-28422-0</a>.</p>
+        <p>The proceedings will be available in Springer LNCS.
+<!-- <a href="https://www.springer.com/978-3-030-28422-0">https://www.springer.com/978-3-030-28422-0</a>.--></p>
         </div>
-      </div>-->
+      </div>
     </div>
 <!--    
     <div class="container" id="invited">
@@ -776,15 +788,15 @@ Martin Rinard is a Professor in the Department of Electrical Engineering and Com
     </div>
 
     <br />
-
+-->
     <div class="container" id="format">
       <h2 class="border-bottom">Submission Information</h2>
       <div class="row">
         <div class="col">
         <h4>Instructions for Authors</h4>
         <p>We solicit regular and short papers. Paper submission must be
-        performed via the EasyChair system: <em><a
-        href="https://easychair.org/conferences/?conf=nsv19" alt="EasyChair NSV2019">https://easychair.org/conferences/?conf=nsv19</a></em>.</p>
+        performed via the EasyChair system<!--: <em><a
+        href="https://easychair.org/conferences/?conf=nsv20" alt="EasyChair NSV 2020">https://easychair.org/conferences/?conf=nsv19</a></em>-->.</p>
         <p>Regular papers must describe original work, be written and presented in English, and must not substantially overlap with papers that have been published or that are under submission. Submitted papers will be judged on the basis of significance, relevance, correctness, originality, and clarity. They should clearly identify what has been accomplished and why it is significant.</p>
         <p>Regular paper submissions should not exceed 15 pages in <a href="https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines">LNCS style</a>, plus possibly bibliography and appendices. However, program committee members are not required to read the appendices, thus papers must be intelligible without them.</p>
         <p>Short papers are also welcome: they should present tools, benchmarks, case-studies or be extended abstracts of ongoing research. Short papers should not exceed 6 pages, excluding extra material as above.</p>
@@ -794,7 +806,7 @@ Martin Rinard is a Professor in the Department of Electrical Engineering and Com
       <div class="row" id="cfp">
         <div class="col">
         <h4>Call for Papers</h4>
-        <p><a href="nsv19-cfp1.txt">Text version of the cfp.</a></p>
+        <p><a href="nsv20-cfp.txt">Text version of the cfp.</a></p>
         </div>
       </div>
       <div class="row" id="dates">
@@ -804,19 +816,19 @@ Martin Rinard is a Professor in the Department of Electrical Engineering and Com
           <tbody>
             <tr>
               <th scope="row">Submissions deadline:</th>
-              <td><s>April 24, 2019</s> <b>May 1, 2019</b></td>
+              <td>April 20, 2020</td>
             </tr>
             <tr>
               <th scope="row">Notification:</th>
-              <td>May 22, 2019</td>
+              <td>May 30, 2020</td>
             </tr>
             <tr>
               <th scope="row">Final version:</th>
-              <td>May 29, 2019</td>
+              <td>June 14, 2020</td>
             </tr>
             <tr>
               <th scope="row">Workshop:</th>
-              <td>July 13-14, 2019</td>
+              <td>July 19, 2020</td>
             </tr>
           </tbody>
         </table>
