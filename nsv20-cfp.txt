@@ -1,10 +1,10 @@
-1st CALL FOR PAPERS
+CALL FOR PAPERS
 
 NSV 2020
 ========
 
 13th  International Workshop on Numerical Software Verification
-July 10, 2020
+July 19, 2020
 
 A workshop affiliated with CAV 2020 - Los Angeles, USA
 
