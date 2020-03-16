@@ -88,6 +88,22 @@ Chairs
 Parasara Sridhar Duggirala, University of North Carolina at Chapel Hill, USA
 Peter Schrammel, University of Sussex, and Diffblue Ltd, UK
 
+Program Committee
+=======
+
+Stanley Bak, Safe Sky Analytics, USA
+Lucas Cordeiro, University of Manchester, UK
+Aaron Dutle, NASA, USA
+Ashutosh Gupta,	IIT Bombay, India
+Ichiro Hasuo, National Institute of Informatics, Japan
+Xiaowei Huang, University of Liverpool, UK
+Manuel Mazo, Delft University of Technology, The Netherlands
+Tatjana Petrov, University of Konstanz, Germany 
+Laura Titolo, National Institute of Aerospace, USA
+Jana Tumova, KTH Royal Institute of Technology, Sweden
+Xiang Yin, Shanghai Jiao Tong University, China
+
+
 Steering Committee
 =======
 
