@@ -1,10 +1,7 @@
-CALL FOR PAPERS
+CALL FOR PAPERS - NSV 2020
+==========================
 
-NSV 2020
-========
-
-13th  International Workshop on Numerical Software Verification
-July 19, 2020
+13th International Workshop on Numerical Software Verification, July 19, 2020
 
 A workshop affiliated with CAV 2020 - Los Angeles, USA
 
@@ -24,11 +21,11 @@ The NSV workshop is dedicated to the development of such techniques.
 
 This year, the NSV workshop is hosting a *special session on numerical computations in machine learning*. This includes, but is not limited to, performance vs accuracy trade-offs, reliability, robustness, co-design of hardware and software for numerical computations in machine learning frameworks.
 
-Topics
-=======
 
-The scope of the workshop includes, but is not restricted to, the
-following topics:
+Topics
+======
+
+The scope of the workshop includes, but is not restricted to, the following topics:
 
 Quality of finite precision numerics
 - Representations of real numbers such as dfloat, finite precision, logarithmic number systems, etc
@@ -46,6 +43,7 @@ Hybrid systems and control software verification
 - Optimal control and synthesis of dynamical systems
 - Applications in space, avionics, automotive, systems biology, etc
 
+
 Important Dates
 ===============
 
@@ -58,46 +56,38 @@ Workshop:                July 19, 2020
 Submission information
 ======================
 
-We solicit regular and short papers. Paper submission must be
-performed via EasyChair.
+We solicit regular and short papers. Paper submission must be performed via EasyChair.
 
-Regular papers must describe original work, be written and presented
-in English, and must not substantially overlap with papers that have
-been published or that are under submission. Submitted papers will be judged
-on the basis of significance, relevance, correctness, originality, and
-clarity. They should clearly identify what has been accomplished and
-why it is significant.
+Regular papers must describe original work, be written and presented in English, and must not substantially overlap with papers that have been published or that are under submission. Submitted papers will be judged on the basis of significance, relevance, correctness, originality, and clarity. They should clearly identify what has been accomplished and why it is significant.
 
-Regular paper submissions should not exceed 15 pages in LNCS style, plus
-possibly bibliography and appendices. However, program committee members are
-not required to read the appendices, thus papers must be intelligible without
-them. 
+Regular paper submissions should not exceed 15 pages in LNCS style, plus possibly bibliography and appendices. However, program committee members are not required to read the appendices, thus papers must be intelligible without them. 
 
-Short papers are also welcome: they should present tools, benchmarks,
-case-studies or be extended abstracts of ongoing research. Short
-papers should not exceed 6 pages, excluding extra material as above. 
+Short papers are also welcome: they should present tools, benchmarks, case-studies or be extended abstracts of ongoing research. Short papers should not exceed 6 pages, excluding extra material as above. 
 
-All accepted papers will be published as Lecture Notes in Computer
-Science (LNCS) with Springer Verlag. 
+All accepted papers will be published as Lecture Notes in Computer Science (LNCS) with Springer Verlag. 
 
 http://www.springer.com/lncs
 
+
 Chairs
-=======
+======
 
 Parasara Sridhar Duggirala, University of North Carolina at Chapel Hill, USA
 Peter Schrammel, University of Sussex, and Diffblue Ltd, UK
 
+
 Program Committee
-=======
+=================
 
 Stanley Bak, Safe Sky Analytics, USA
+Sylvie Boldo, Inria, France
 Lucas Cordeiro, University of Manchester, UK
 Aaron Dutle, NASA, USA
 Ashutosh Gupta,	IIT Bombay, India
 Ichiro Hasuo, National Institute of Informatics, Japan
 Xiaowei Huang, University of Liverpool, UK
 Manuel Mazo, Delft University of Technology, The Netherlands
+Martin Nyx Brain, City University of London, UK
 Tatjana Petrov, University of Konstanz, Germany 
 Laura Titolo, National Institute of Aerospace, USA
 Jana Tumova, KTH Royal Institute of Technology, Sweden
@@ -105,7 +95,7 @@ Xiang Yin, Shanghai Jiao Tong University, China
 
 
 Steering Committee
-=======
+==================
 
 Sergiy Bogomolov (Newcastle University, UK)
 Radu Grosu (TU Vienna, Austria)
