@@ -79,6 +79,7 @@ Peter Schrammel, University of Sussex, and Diffblue Ltd, UK
 Program Committee
 =================
 
+Assale Adje, University of Perpignan Via Domitia, France
 Stanley Bak, Safe Sky Analytics, USA
 Sylvie Boldo, Inria, France
 Lucas Cordeiro, University of Manchester, UK
@@ -88,7 +89,8 @@ Ichiro Hasuo, National Institute of Informatics, Japan
 Xiaowei Huang, University of Liverpool, UK
 Manuel Mazo, Delft University of Technology, The Netherlands
 Martin Nyx Brain, City University of London, UK
-Tatjana Petrov, University of Konstanz, Germany 
+Tatjana Petrov, University of Konstanz, Germany
+Pierre Roux, ONERA, France
 Laura Titolo, National Institute of Aerospace, USA
 Jana Tumova, KTH Royal Institute of Technology, Sweden
 Xiang Yin, Shanghai Jiao Tong University, China
