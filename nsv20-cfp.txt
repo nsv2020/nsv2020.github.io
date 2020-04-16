@@ -7,6 +7,7 @@ A workshop affiliated with CAV 2020 - Los Angeles, USA
 
 Web Page: https://nsv2020.github.io/
 
+DEADLINE EXTENSION: See below.
 
 Description of the Workshop
 ===========================
@@ -47,10 +48,10 @@ Hybrid systems and control software verification
 Important Dates
 ===============
 
-Submissions deadline:    April 20, 2020
-Notification:            May 23, 2020
-Final version:           June 2, 2020
-Workshop:                July 19, 2020
+Submissions deadline (extended): April 27, 2020
+Notification:                    May 23, 2020
+Final version:                   June 2, 2020
+Workshop:                        July 19, 2020
 
 
 Submission information
