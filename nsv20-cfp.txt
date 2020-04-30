@@ -48,7 +48,7 @@ Hybrid systems and control software verification
 Important Dates
 ===============
 
-Submissions deadline (extended): May 3, 2020 AoE
+Submissions deadline (extended): May 3, 2020 23:59 AoE
 Notification:                    May 23, 2020
 Final version:                   June 2, 2020
 Workshop:                        July 19, 2020
